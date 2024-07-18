@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: mkdir -p path/to/artifacts
-      - run: echo "Hello, GitHub Actions!" > path/to/artifacts/hello.txt
+      - run: echo hello > path/to/artifacts/hello.txt
       - uses: actions/upload-artifact@v2
         with:
           name: my-artifact
